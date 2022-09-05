@@ -1,6 +1,6 @@
-import { Button } from "ui";
+import { Button } from "ui/src";
 
-export default function Docs() {
+export default function Client() {
   return (
     <div>
       <h1>Client</h1>
