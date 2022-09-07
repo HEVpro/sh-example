@@ -6,133 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "Sample endpoint: Returns details about a particular user",
-			"id": "2d52cc87-2e5b-4abd-a4f2-06ba02335c2c",
-			"protocolProfileBehavior": {
-				"disabledSystemHeaders": {}
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"disabled": true
-					}
-				],
-				"url": {
-					"raw": "{{baseUrl}}/api/v1/users?id=1234",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"v1",
-						"users"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "1234"
-						}
-					]
-				}
-			},
-			"response": [
-				{
-					"id": "966fa431-8d3d-4b5d-a8ab-0180c5aa909f",
-					"name": "Sample response: Details about a user by ID",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"description": "Added as a part of security scheme: basic",
-								"key": "Authorization",
-								"value": "Basic <credentials>"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/users?id=-61255900",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"users"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "-61255900"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"disabled": false,
-							"description": "A link to the next page of responses",
-							"key": "x-next",
-							"value": "dolore velit",
-							"enabled": true
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json",
-							"enabled": true
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n  \"id\": -86273455,\n  \"name\": \"eu m\",\n  \"tag\": \"voluptate est dolore\"\n}"
-				},
-				{
-					"id": "6da71207-9ed6-4169-bde5-1659b4d2532f",
-					"name": "Unexpected error",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"description": "Added as a part of security scheme: basic",
-								"key": "Authorization",
-								"value": "Basic <credentials>"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/users?id=-61255900",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"users"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "-61255900"
-								}
-							]
-						}
-					},
-					"status": "Internal Server Error",
-					"code": 500,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Content-Type",
-							"value": "application/json",
-							"enabled": true
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n  \"code\": -14641264,\n  \"message\": \"occaecat deserunt commodo \"\n}"
-				}
-			]
-		},
-		{
 			"name": "Register",
 			"id": "9dbfda83-57f0-4a20-b251-f146597cf507",
 			"protocolProfileBehavior": {
@@ -549,7 +422,7 @@
 	],
 	"variable": [
 		{
-			"id": "87b28767-138b-4331-91ab-de93fe77dbf4",
+			"id": "c324bee5-5ec0-4e9b-afae-9c4e87e8ce9c",
 			"key": "baseUrl",
 			"value": "localhost:3000/api/v1"
 		}
