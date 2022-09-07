@@ -1,4 +1,4 @@
-import { Button } from "ui/src";
+import { Button } from "@sh/components/src";
 
 export default function Client() {
   return (

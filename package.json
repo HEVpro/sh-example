@@ -9,10 +9,15 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "admin": "turbo run dev --parallel --filter=@sh/admin",
+    "client": "turbo run dev --parallel --filter=@sh/client",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "generate-api": " openapi-generator-cli generate -g typescript-fetch -i ./openapi.yaml -o ./packages/api --additional-properties=npmName=@sh/api,supportsES6=true,npmVersion=6.9.0,typescriptThreePlus=true"
   },
   "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.5.2",
     "eslint-config-custom": "*",
     "prettier": "2.7.1",
     "turbo": "latest"
@@ -20,7 +25,5 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "packageManager": "npm@8.1.0",
-  "dependencies": {
-  }
+  "packageManager": "npm@8.1.0"
 }

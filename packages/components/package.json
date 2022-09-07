@@ -1,8 +1,9 @@
 {
-  "name": "ui",
+  "name": "@sh/components",
   "version": "0.0.0",
   "main": "src/index.tsx",
   "types": "./index.tsx",
+  "sideEffects": false,
   "license": "MIT",
   "scripts": {
     "lint": "eslint *.ts*"
